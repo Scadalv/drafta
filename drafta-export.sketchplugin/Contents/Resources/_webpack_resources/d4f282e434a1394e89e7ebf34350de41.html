@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Drafta — Export</title>
+  <link rel="stylesheet" href="2fc4e2911ca8a244096633cf3afa13ef.css">
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-bar__status" id="progressBarStatus"></div>
+  </div>
+
+  <button class="close-button" id="closeWindow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"/></svg>
+  </button>
+
+  <div class="alert" id="alert" style="opacity: 0; visibility: hidden;">
+    <div class="alert__logo"></div>
+    <div class="alert__title" id="alertTitle">
+      <p>We’re sorry, there is a problem with internet connection or your credentials.</p>
+      <p>Please re-login and try again.</p>
+    </div>
+    <div class="starter-form__commit">
+      <button class="starter-form__button starter-form__button--red starter-form__button--w112" id="logoutSubmit">Log out</button>
+    </div>
+  </div>
+
+  <div id="export" class="export" style="opacity: 0; visibility: hidden;">
+    <div class="export__logo"></div>
+    <div class="export__title" id="exportTitle"></div>
+    <div class="export__form-wrapper" id="exportForm">
+      <div class="export__form-projects">
+        <div class="export__form-title">
+          Choose project
+        </div>
+        <select id="project">
+        </select>
+        <a href="#" data-href="https://drafta.co/app" onclick="openUrl(event)" class="export__manage-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M496 72H288V48c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v24H16C7.2 72 0 79.2 0 88v16c0 8.8 7.2 16 16 16h208v24c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-24h208c8.8 0 16-7.2 16-16V88c0-8.8-7.2-16-16-16zm0 320H160v-24c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v24H16c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h80v24c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-24h336c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16zm0-160h-80v-24c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v24H16c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h336v24c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-24h80c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16z"/></svg>
+        </a>
+        <div class="export__select-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"/></svg>
+        </div>
+      </div>
+      <div class="export__form-size">
+        <div class="export__form-title">
+          Size
+        </div>
+        <select id="size">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+        </select>
+        <div class="export__select-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="export__commit" id="exportBeforeUploadActions" style="display: none">
+      <button class="export__button" id="uploadSubmit">Upload</button>
+    </div>
+    <div class="export__commit export__commit--uploading" id="exportWhenUploadingActions" style="display: none;">
+      <a href="#" class="export__button export__button--red" id="exportCancel">Cancel</a>
+    </div>
+    <div class="export__commit export__commit--uploading" id="exportAfterUploadActions" style="display: none;">
+      <a href="#" data-href="" class="export__button" onclick="openUrl(event)" id="openProject">Open project</a>
+    </div>
+  </div>
+
+  <script src="../export.js"></script>
+</body>
+</html>

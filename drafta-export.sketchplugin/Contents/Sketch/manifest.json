@@ -1,0 +1,33 @@
+{
+  "name": "Drafta",
+  "description": "Export designs directly to Drafta",
+  "homepage": "https://drafta.co",
+  "version": "1.0.3",
+  "author": "Fragment",
+  "authorEmail": "hello@drafta.co",
+  "icon": "icon.png",
+  "appcast": "https://raw.githubusercontent.com/fragmentlv/drafta/master/.appcast.xml",
+  "identifier": "com.fragment.sketch.drafta",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Export to Drafta.co",
+      "identifier": "export",
+      "script": "export.js"
+    },
+    {
+      "name": "Settings",
+      "identifier": "settings",
+      "script": "settings.js"
+    }
+  ],
+  "menu": {
+    "title": "Drafta",
+    "items": [
+      "export",
+      "settings"
+    ]
+  },
+  "disableCocoaScriptPreprocessor": true
+}

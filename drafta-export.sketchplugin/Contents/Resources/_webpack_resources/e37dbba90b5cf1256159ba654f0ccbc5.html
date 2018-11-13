@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Drafta — Settings</title>
+  <link rel="stylesheet" href="2fc4e2911ca8a244096633cf3afa13ef.css">
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-bar__status" id="progressBarStatus"></div>
+  </div>
+
+  <button class="close-button" id="closeWindow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"/></svg>
+  </button>
+
+  <div id="login" style="display: none">
+    <form class="starter-form">
+      <div class="starter-form__logo"></div>
+      <div class="starter-form__error" id="errorMessage" style="opacity: 0;">Invalid credentials.</div>
+
+      <div class="starter-form__fields">
+        <input class="starter-form__field" type="text" id="formUsername" placeholder="E-mail">
+        <input class="starter-form__field" type="password" id="formPassword" placeholder="Password">
+      </div>
+      <div class="starter-form__commit">
+        <button class="starter-form__button" id="loginSubmit">Log in</button>
+        <div class="btn-plain">
+          <a href="#" data-href="https://drafta.co/forgot" onclick="openUrl(event)">Forgot pass?</a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="logout" style="display: none;">
+    <form class="starter-form">
+      <div class="starter-form__logo"></div>
+      <div class="starter-form__label">
+        You are logged in as <span id="username"></span>
+      </div>
+      <div class="starter-form__commit">
+        <button class="starter-form__button starter-form__button--red starter-form__button--w112" id="logoutSubmit">Log out</button>
+        <div class="btn-plain">
+          <a href="#" data-href="https://drafta.co/app/profile" onclick="openUrl(event)">Profile</a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="../settings.js"></script>
+</body>
+</html>
