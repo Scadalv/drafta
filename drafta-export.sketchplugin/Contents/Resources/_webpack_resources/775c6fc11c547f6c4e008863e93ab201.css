@@ -412,6 +412,10 @@ body, input {
   fill: #999999;
 }
 
+.export__manage-icon svg {
+  pointer-events: none;
+}
+
 .export__manage-icon:hover {
   fill: #666666;
 }

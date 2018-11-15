@@ -2503,7 +2503,7 @@ module.exports = fetch
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/d4f282e434a1394e89e7ebf34350de41.html").path();
+module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/0cdbe3ca3876ce1dc4dde07aada79419.html").path();
 
 /***/ }),
 
@@ -2514,7 +2514,7 @@ module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resour
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/e37dbba90b5cf1256159ba654f0ccbc5.html").path();
+module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/00147fd91aef191b2b2c5db3c11b2d77.html").path();
 
 /***/ }),
 
@@ -2529,7 +2529,7 @@ module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resour
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   APP_KEY: 'com.fragment.sketch.drafta',
-  APP_VERSION: '1.0.3',
+  APP_VERSION: '1.0.4',
   API_VERSION: '1.0',
   API_URL_HTTP: 'http://drafta.co/api',
   API_URL_HTTPS: 'https://drafta.co/api'
