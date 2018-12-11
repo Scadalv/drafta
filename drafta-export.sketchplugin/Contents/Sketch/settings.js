@@ -2529,7 +2529,7 @@ module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resour
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   APP_KEY: 'com.fragment.sketch.drafta',
-  APP_VERSION: '1.0.4',
+  APP_VERSION: '1.0.5',
   API_VERSION: '1.0',
   API_URL_HTTP: 'http://drafta.co/api',
   API_URL_HTTPS: 'https://drafta.co/api'
