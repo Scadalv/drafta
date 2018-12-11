@@ -6,6 +6,6 @@ Drafta is a tool to keep track of project design screens and share them with oth
 
 ![Sketch plugin](drafta-sketch.gif)
 
-[Download zip](https://github.com/fragmentlv/drafta/releases/download/v1.0.3/drafta-export.sketchplugin.zip)
+[Download zip](https://github.com/fragmentlv/drafta/releases/download/v1.0.5/drafta-export.sketchplugin.zip)
 
 http://drafta.co
