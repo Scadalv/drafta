@@ -2529,7 +2529,7 @@ module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resour
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   APP_KEY: 'com.fragment.sketch.drafta',
-  APP_VERSION: '1.0.5',
+  APP_VERSION: '1.0.6',
   API_VERSION: '1.0',
   API_URL_HTTP: 'http://drafta.co/api',
   API_URL_HTTPS: 'https://drafta.co/api'
@@ -2679,10 +2679,11 @@ var template = __webpack_require__(/*! ../resources/export.html */ "./resources/
           } else {
             sketch.export(uploadStack[index], {
               output: getCacheDirectory(),
+              'use-id-for-name': true,
               scales: "".concat(data.selectedSize),
               'save-for-web': true
             });
-            var fullPath = "".concat(getCacheDirectory(), "/").concat(uploadStack[index].name).concat(data.selectedSize > 1 ? '@' + data.selectedSize + 'x' : '', ".png");
+            var fullPath = "".concat(getCacheDirectory(), "/").concat(uploadStack[index].id).concat(data.selectedSize > 1 ? '@' + data.selectedSize + 'x' : '', ".png");
             var savedArtboardPath = NSURL.fileURLWithPath(fullPath);
             files.push(savedArtboardPath);
             var imageBinary = readBinaryFile(savedArtboardPath);
