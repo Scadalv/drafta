@@ -96,9 +96,10 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/config */ "./src/config.js");
+// disable the context menu (eg. the right click menu) to have a more native feel
 
 document.addEventListener('contextmenu', function (e) {
-  return e.preventDefault();
+  e.preventDefault();
 });
 document.addEventListener('DOMContentLoaded', function () {
   window.postMessage('requestInitialData', null);
@@ -211,4 +212,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=settings.js.map
+//# sourceMappingURL=resources_settings.js.map

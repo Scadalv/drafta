@@ -13,5 +13,8 @@
         <item>
             <enclosure url="https://github.com/fragmentlv/drafta/releases/download/v1.0.6/drafta-export.sketchplugin.zip" sparkle:version="1.0.6"/>
         </item>
+        <item>
+            <enclosure url="https://github.com/fragmentlv/drafta/releases/download/v1.0.7/drafta-export.sketchplugin.zip" sparkle:version="1.0.7"/>
+        </item>
     </channel>
 </rss>

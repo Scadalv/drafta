@@ -73,7 +73,8 @@ body {
   line-height: 1.4286;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #222;
+  background: #ffffff;
+  color: #222222;
   min-height: 100%;
   padding: 64px;
   width: 576px;
